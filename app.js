@@ -22,7 +22,6 @@ async function generarTarjeta(pokemon) {
 async function obtenerInfoApi(api) {
     const resultado = await fetch(api);
     const info = await resultado.json();
-    let infoPokemon = "def";
     info.results.forEach(generarTarjeta);
 }
 
